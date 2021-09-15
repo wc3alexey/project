@@ -252,13 +252,13 @@ display: none;
                     }
                         .header__button-searchDesctop{
                             background: #FF3E79 url('../img/icon.png');
-                            margin: 42px 16px 24px 160px;
+                            margin-left: 160px;
                             background-repeat:no-repeat;
                             background-position: center;
                         }
                         .header__button-serviceDesctop{
                             background: #FF3E79 url('../img/Group1.png');
-                            margin: 42px 0 24px 540px;
+                            margin-left:540px;
                             background-repeat:no-repeat ;
                             background-position: center;
                         }
@@ -266,7 +266,7 @@ display: none;
                         position: absolute;
                         content:"Оставить заявку";
                         left: 720px;
-                        top: 55px;
+                        top: 37px;;
                         color: #1B1C21;
                         font-family:'TTLakesCondensed-Medium.ttf';
                         Font-size: 16px;
@@ -276,7 +276,7 @@ display: none;
                         content:"Статус ремонта";
                         height: 24px;
                         left: 925px;
-                        top: 55px;
+                        top: 37px;
                         color: #1B1C21;
                         font-family:'TTLakesCondensed-Medium.ttf';
                         Font-size: 16px;

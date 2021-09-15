@@ -88,6 +88,7 @@
                 width: 100%;
                 background: #F8F8F8;
                 position: relative;
+                padding: 24px 0;
             }
             .header__seporator{
                 display: none;

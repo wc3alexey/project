@@ -138,11 +138,10 @@
                 content: "|";
                 width: 3px;
                 height: 40px;
-                background-color: #41F6D7;
                 color: #41F6D7;
                 margin-right: 34px;
                 border-radius: 5px;
-                margin-left: -286px;
+                margin-left: -270px;
                }     
         .menu__list{
             flex-direction: row ;
