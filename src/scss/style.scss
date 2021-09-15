@@ -1,0 +1,36 @@
+@font-face{
+  font-family:'TTLakes-Bold.ttf';
+  src: url('../fonts/TTLakes-Bold.ttf');
+  Font-style: Bold;
+  Font-size: 28px;
+  color:#1B1C21; 
+}
+@font-face{
+  font-family:'TTLakesCondensed-Medium.ttf';
+  src: url('../fonts/TTLakes-Medium.ttf');
+  Font-style: Medium;
+  font-size: 16px;
+}
+@font-face {
+font-family: 'TTLakesCondensed-Regular.ttf';
+ src: url('../fonts/TTLakesCondensed-Regular.ttf');
+  Fill: Solid;
+  color: #1B1C21;
+}
+  .container{
+    margin: auto;
+    background: #F2F2F2; 
+}
+* {
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+}
+@import'../scss/header.css';
+@import'../scss/button.css';
+@import'../scss/main.css';
+@import'../scss/menu.css';
+@import'../scss/asaid.css';
+@import'../scss/container.css';
+@import'../scss/modal.css';
+@import'../scss/sidebar.css';

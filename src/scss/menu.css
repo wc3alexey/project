@@ -1,0 +1,166 @@
+.menu__content{
+    width: 100%;
+    display: flex;
+    flex-direction: column ;
+    background: #F8F8F8;    
+}
+.menu__title {
+    font-family:'TTLakes-Bold.ttf';
+    padding: .6em 0;
+    margin: 24px 16px;
+}
+.menu__title:before{
+    content:"|" ;
+    width: 1px;
+    height: 40px;
+   background-color: #41F6D7;
+   color: #41F6D7;
+   margin-right: 16px;
+   border-radius: 2px;
+   margin-left: -20px;
+   }
+   .menu__title-desctop{
+    display: none ;
+}
+    .menu__list{
+        font-family:'TTLakesCondensed-Medium.ttf';
+        Font-size: 16px;
+        color: #7E7E82;
+        overflow-x: scroll;
+        display: flex;
+        list-style: none;
+        white-space: nowrap;
+        margin-left: 16px;
+      }
+      .menu__list::-webkit-scrollbar {
+        width: 0;
+      }
+      .menu__item:hover {
+        border: 2px #b8ffec solid;
+        border-radius: 6px;
+        background-color: #FFF; 
+      }
+      .menu__item {
+        list-style-type: none;
+        padding:8px 16px 8px 16px;
+        margin:0 19px 24px 16px;
+        font-size: 16px;
+        line-height: 24px;
+        box-sizing: border-box;
+        border: 2px solid #F8F8F8;
+      }
+      .menu__link{
+        white-space: nowrap;
+        text-decoration: none;
+        color: #7E7E82;
+      }
+      .aside__menuDirect{
+        padding-inline-start: 0px;
+        margin: 0;
+        }
+        .aside__menuItem{
+            font-family:'TTLakesCondensed-Medium.ttf';
+            list-style:none;
+            white-space:nowrap;
+            margin-left: 0;
+        }
+        .aside__menuLink{
+             cursor: pointer;
+            text-decoration: none;
+            color: #1B1C21;
+            padding: 0 0 0 1.5em ;
+            font-size: 16px;
+            display: flex;
+            position: relative;
+            align-items: center;
+            height: 32px;
+            margin: 0 0 24px 0;
+            transition: 0.5s; 
+        }  
+        .aside__menuLink:hover {
+            transform: scale(0.9);
+        }
+         .aside__menuLink:hover::before{
+            content:"";
+            background-color: #41F6D7;
+            border-radius: 0 5px 5px 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+        } 
+        .aside__menuLink:focus{
+            color: #7E7E82;   
+        }
+        .sidebar__menu{
+            margin-top: 24px;
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+        .modal__menu{
+            margin-top: 24px;
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+      @media (min-width:768px) {
+        .menu__content{
+            width: 100%;
+            flex-direction: column;
+            background: #F8F8F8;
+        }
+        .aside__menuLink{
+            margin: 0 0 32px 0;
+        }
+        .sidebar__menu {
+            margin-top: 24px;
+            margin-left: 32px;
+            margin-right: 32px;
+        }
+        .modal__menu{
+            margin-top: 24px;
+            margin-left: 32px;
+            margin-right: 32px;
+        }
+    }
+    @media  (min-width:1120px){
+        .menu__content{
+            width: 100%;}
+            .menu__title{
+                display: none;
+            }
+            .menu__title-desctop{
+                display: inline;
+                font-family:'TTLakes-Bold.ttf';
+                margin: 42px 0 0 34px;
+            }
+            .menu__title-desctop:before{
+                content: "|";
+                width: 3px;
+                height: 40px;
+                background-color: #41F6D7;
+                color: #41F6D7;
+                margin-right: 34px;
+                border-radius: 5px;
+                margin-left: -40px;
+               }
+               
+        .menu__list{
+            flex-direction: row ;
+            flex-wrap: wrap;
+            list-style: none;
+            overflow-x:visible;
+            margin-left: 32px;
+        }
+        .menu__item{
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: -2px;
+            border: 2px solid #ccc transparent;
+        }
+    }
+    @media  (min-width:1800px){
+        .menu__content{
+            margin: auto;
+        }
+    }

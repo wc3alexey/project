@@ -1,0 +1,10 @@
+.container-fade{
+    opacity: 0.1;
+
+}
+@media (min-width:1440px){
+.container{
+  left: 350px;
+  position: fixed;
+}
+}

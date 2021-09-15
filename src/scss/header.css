@@ -1,0 +1,107 @@
+.header{
+    margin: 0;
+}
+.header__content{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-width: 320px;
+    display: flex;
+    align-items: center;
+    padding: 24px 16px;
+    background-color: #fff;
+    border-bottom: 1px solid #d9fff5;
+    z-index: 220;
+}
+.header__img-group{
+    position: relative;
+}  
+.header__seporator{
+    width: 2px;
+    height: 32px;
+    margin: 0 16px;
+    background-color: #eaeaea;
+    border-radius: 1px;
+}
+.header__img-group:before{
+  display: none;
+}
+.modal__header-text{
+    font-family: 'TTLakes-Bold.ttf';
+    margin-bottom: 24px;
+    font-size: 24px;
+}
+.modal__header-text::before{
+    content:"|" ;
+    width: 1px;
+    height: 40px;
+   color: #41F6D7;
+   margin-right: 16px;
+   border-radius: 2px;
+   margin-left: -20px;
+   border-radius: 0 5px 5px 0;
+   }
+   .sidebar__header-text{
+    font-family: 'TTLakes-Bold.ttf';
+    margin-bottom: 24px;
+    font-size: 24px;
+}
+.sidebar__header-text::before{
+    content:"|" ;
+    width: 1px;
+    height: 40px;
+   color: #41F6D7;
+   margin-right: 16px;
+   border-radius: 2px;
+   margin-left: -20px;
+   border-radius: 0 5px 5px 0;
+   }
+ 
+            @media (min-width:768px) {
+                .header__content{
+                    width: 100%;
+                }
+                .header__logo-separator{
+                    width: 2px;
+                    height: 32px;
+                    margin: 0 16px;
+                    background-color: #eaeaea;
+                    border-radius: 1px;
+                }
+            .modal__header-text{
+                margin-top: -35px;
+                margin-left: 32px;
+                margin-right: 32px;
+            }
+            .modal__header-text::before {
+                margin-right: 30px;
+                margin-left: -35px;
+            }
+            .sidebar__header-text{
+                margin-top: -76px;
+            }
+            .sidebar__header-text::before {
+                margin-left: -34px;
+                margin-right: 24px;
+            }
+        }
+        @media  (min-width:1120px){
+            .header__content{
+                border-bottom: none;
+                width: 100%;
+                background: #F8F8F8;
+            }
+            .header__button-burger{
+                display: none;
+            }
+           
+                .header__img-group{
+                    display: none;
+                }
+            }
+
+        @media  (min-width:1800px){
+            .header__content{
+                margin: auto;
+            }
+        }
