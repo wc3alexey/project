@@ -30,7 +30,7 @@
         display: flex;
         list-style: none;
         white-space: nowrap;
-        margin-left: 16px;
+   
       }
       .menu__list::-webkit-scrollbar {
         width: 0;
@@ -132,7 +132,7 @@
             .menu__title-desctop{
                 display: inline;
                 font-family:'TTLakes-Bold.ttf';
-                margin: 42px 0 0 34px;
+                
             }
             .menu__title-desctop:before{
                 content: "|";
@@ -142,9 +142,8 @@
                 color: #41F6D7;
                 margin-right: 34px;
                 border-radius: 5px;
-                margin-left: -40px;
-               }
-               
+                margin-left: -286px;
+               }     
         .menu__list{
             flex-direction: row ;
             flex-wrap: wrap;

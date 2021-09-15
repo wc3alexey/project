@@ -23,9 +23,6 @@
     background-color: #eaeaea;
     border-radius: 1px;
 }
-.header__img-group:before{
-  display: none;
-}
 .modal__header-text{
     font-family: 'TTLakes-Bold.ttf';
     margin-bottom: 24px;
@@ -90,6 +87,13 @@
                 border-bottom: none;
                 width: 100%;
                 background: #F8F8F8;
+                position: relative;
+            }
+            .header__seporator{
+                display: none;
+            }
+            .header__logo-separator{
+                display: none;
             }
             .header__button-burger{
                 display: none;
