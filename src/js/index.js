@@ -45,7 +45,7 @@ closeSidebar.addEventListener('click',function () {
 });
 
 buttonSwiper.addEventListener('click', function () { 
-    mainSwiper.classList.toggle("main__swiper__showMore_active");
+    mainSwiper.classList.toggle("main__swiper-showMore_active");
     buttonSwiper.classList.toggle("container__button-showMore_active");
     if (buttonSwiper.textContent = buttonSwiper.classList.contains("container__button-showMore_active") ? "Скрыть" : "Показать всё");
 });
