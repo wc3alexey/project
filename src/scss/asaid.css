@@ -83,7 +83,7 @@
             box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02), 16px 0 52px rgba(14, 24, 80, 0.2);
             max-height: 1024px;
         }}
-        @media (min-width:1440px){
+        @media (min-width:1120px){
             .aside{
                 width: 360px;
                 left: 0;
@@ -95,3 +95,4 @@
                 margin-bottom: 40px;
             }
         }
+       

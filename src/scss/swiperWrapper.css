@@ -1,0 +1,195 @@
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #F8F8F8;
+}
+.swiper__section {
+    position: relative;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+.swiper__header {
+    background: linear-gradient(90deg,  #F8F8F8 0%, #FFFFFF 100%);
+    border-top: 3px solid #D9FFF5;
+    padding: 16px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #7E7E82;
+    line-height: 24px;
+    font-family: "TT Lakes";
+}
+.container {
+    padding-left: 16px;
+}
+.main__swiper {
+    width: auto;
+    margin: 16px 0px 16px 0px;
+}
+.swiper-container {
+    width: 100%;
+    padding-bottom: 28px;
+}
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #DDDDDD;
+}
+.swiper-pagination-bullet-active {
+    background: #B5B6BC;
+}
+.container::after {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 81px;
+    right: 1px;
+    top: 10px;
+    z-index: 1;
+    filter: blur(8px);
+}
+.main__brend {
+    display: flex;
+    align-items: center;
+    width: 238px;
+    list-style: none;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    position: relative;
+    height: 72px;
+    padding-left: 16px;
+}
+.main__link {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+}
+
+.link-brand {
+    height: 40px;
+    width: 40px;
+    right: 16px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:#FFFFFF url("../img/dropdown.svg") no-repeat center ;
+    border:2px solid #FF3E79; 
+    cursor: pointer;
+    transition: width 0.5s,height 0.5s, background-color 0.5s, transform 0.5s;
+}
+.link-brand:hover{
+    width: 40px;
+    height: 40px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.container__button-showMore {
+    position: relative;
+    font-family: "TLakes-Medium";
+    font-size: 16px;
+    background: #F8F8F8;
+    border: none;
+    font-weight: 500;
+    padding-left: 24px;
+    display: none;
+    transition: 0.2s; 
+}
+.container__button-showMore:hover {
+    transform: scale(1.2);
+}
+.container__button-showMore::before {
+    position: absolute;
+    content: url("../img/icons.svg");
+    margin-left: -17px;
+    cursor: pointer;
+}
+@media (min-width: 768px) {
+    .swiper__header{
+        padding-left: 24px;
+    }
+    .container {
+        padding-left: 24px;
+        padding-bottom: 34px;
+    }
+    .main__swiper {
+        display: flex;
+        flex-wrap: wrap;
+        height: 159px;
+        overflow: hidden;
+        margin: 24px 0px 24px 0px;
+    }
+    .swiper-pagination-bullet{
+        display: none;
+    }
+    .main__brend {
+        width: 222px;
+        margin-bottom: 16px;
+        margin-right: 24px;
+    }
+    .main__brend:nth-child(3n+3) {
+        margin-right: 0px;
+    }
+    .container__button-showMore {
+        display: block;
+    }
+    .container::after{
+        display: none;
+    }
+
+
+    .container__button-showMore:hover {
+        cursor: pointer;
+    }
+    .main-showMore_active {
+        height: auto;
+    }
+    .container__button-showMore_active::before {
+        transform: rotate(180deg);
+    }
+}
+@media (min-width: 984px) {
+    .main__brend:nth-child(3n+3) {
+        margin-right: 24px;    
+    }
+    .swiper-pagination-bullet{
+        display: none;
+    }
+}
+@media (min-width: 1120px) {
+    .swiper__header {
+        padding-left: 32px;
+    }
+    .container {
+        padding-left: 32px;
+    }
+    .main__swiper-wrapper {
+        margin: 24px 33px 34px 0px;
+    }
+    .main__brend {
+        min-width: 238px;
+        margin-right: 32px;
+    }
+    .main__brend:nth-child(3n+3) {
+        margin-right: 32px;
+    }
+    .main__brend:nth-child(4n+4) {
+        margin-right: 0px;
+    }
+    .main__brend:nth-child(9),
+    .main__brend:nth-child(10),
+    .main__brend:nth-child(11) {
+        margin-bottom: 0px;
+    }
+    .swiper-pagination-bullet{
+        display: none;
+    }
+}
+@media (min-width: 1383px){
+    .main__brend:nth-child(4n+4) {
+        margin-right: 32px;
+
+}
+}

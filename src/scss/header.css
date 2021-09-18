@@ -2,8 +2,7 @@
     margin: 0;
 }
 .header__content{
-    position: fixed;
-    top: 0;
+  
     width: 100%;
     min-width: 320px;
     display: flex;
@@ -66,19 +65,19 @@
                     border-radius: 1px;
                 }
             .modal__header-text{
-                margin-top: -35px;
+                margin-top: -76px;
                 margin-left: 32px;
                 margin-right: 32px;
             }
             .modal__header-text::before {
                 margin-right: 30px;
-                margin-left: -35px;
+                margin-left: -68px;
             }
             .sidebar__header-text{
                 margin-top: -76px;
             }
             .sidebar__header-text::before {
-                margin-left: -34px;
+                margin-left: -36px;
                 margin-right: 24px;
             }
         }

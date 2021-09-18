@@ -5,9 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
-<body> 
+<body class="body"> 
     <aside class="aside">
     <div class="aside__header">
         <button class="aside__button-close button" ></button>
@@ -71,7 +72,7 @@
 <button class="sidebar__button-send"></button>
 </div>
 </div>
-    <div class="container">
+    <div class="container__wrapper">
         <header class="header">
             <div class="header__content">
                 <button class="header__button-burger button"></button>
@@ -110,6 +111,39 @@
      <img class="text__img img" src="img\_MG_3223.png" alt="big SPS">
     </div></main>
 </div>
-</body>
+<section class="swiper__section">
+    <div class="swiper__header">
+        <p>Ремонт техники различных брендов</p>
+    </div>
+    <div class="container swiper-container" data-mobile="false">
+        <ul class="main__swiper swiper-wrapper">
+            <li class="main__brend  swiper-slide"><img src="img/Lenovo.svg" alt="lenovo"><button class="link-brand swiper-slide">
+            </li>
+            <li class="main__brend swiper-slide"><img src="img/Samsung.svg" alt="Samsung"><button class="link-brand swiper-slide">
+            </li>
+            <li class="main__brend swiper-slide"><img src="img/Apple.svg" alt="Apple"><button class="link-brand swiper-slide">
+            </li>
+            <li class="main__brend swiper-slide"><img src="img/Bosch.svg" alt="Bosch"><button class="link-brand swiper-slide">
+            </li>
+            <li class="main__brend swiper-slide"><img src="img/HP.svg" alt="hp"><button class="link-brand swiper-slide">
+            </li>
+            <li class="main__brend swiper-slide"><img src="img/acer.svg" alt="acer"><button class="link-brand swiper-slide">
+            </li>
+            <li class="main__brend swiper-slide"><img src="img/ViewSonic.svg" alt="ViewSonic"><button class="link-brand swiper-slide">
+            </li>
+            <li class="main__brend swiper-slide"><img src="img/sony.svg" alt="sony"><button class="link-brand swiper-slide">
+            </li>
+            <li class="main__brend swiper-slide"><img src="img/Lenovo.svg" alt="lenovo"><button class="link-brand swiper-slide">
+            </li>
+            <li class="main__brend swiper-slide"><img src="img/Samsung.svg" alt="Samsung"><button class="link-brand swiper-slide">
+            </li>
+            <li class="main__brend swiper-slide"><img src="img/Apple.svg" alt="Apple"><button class="link-brand swiper-slide">
+            </li>
+        </ul>
+        <button class="container__button-showMore">Показать все</button>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 </body>
 </html>
