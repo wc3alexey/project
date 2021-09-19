@@ -1,8 +1,11 @@
 body {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
     background: #F8F8F8;
+    overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 .swiper__section {
     position: relative;
@@ -160,8 +163,17 @@ body {
     }
 }
 @media (min-width: 1120px) {
+    .swiper__section {
+        position: fixed;
+        top: 493px;
+        left: 359px;
+        max-width: 1120px;
+        display: flex;
+        flex-direction: column;
+    }
     .swiper__header {
         padding-left: 32px;
+        width: 1103px;
     }
     .container {
         padding-left: 32px;
@@ -193,4 +205,10 @@ body {
         margin-right: 32px;
 
 }
+}
+@media (min-width: 1558px) {
+    .swiper__section {
+        top: 459px;
+      
+    }
 }
