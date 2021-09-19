@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <title>Webpack 4 Starter</title>
+<link href="style.css" rel="stylesheet"></head>
+<body class="body"> 
+    <aside class="aside">
+    <div class="aside__header">
+        <button class="aside__button-close button"></button>
+    <div class="logo">
+        <a href="#"><img class="aside__header-img" src="img\Group.png" alt="sps"></a>
+    </div>
+        <button class="aside__button-search button"></button>
+    </div>
+<main class="main">
+    <nav class="aside__main">
+        <ul class="aside__menuDirect">
+            <li class="aside__menuItem"><a href="#" class="aside__menuLink">Услуги и сервисы</a></li>
+            <li class="aside__menuItem"><a href="#" class="aside__menuLink">Корпоративным клиентам</a></li>
+            <li class="aside__menuItem"><a href="#" class="aside__menuLink">Продавцам техники</a></li>
+            <li class="aside__menuItem"><a href="#" class="aside__menuLink">Партнерам</a></li>
+            <li class="aside__menuItem"><a href="#" class="aside__menuLink">Производителям</a></li>
+            <li class="aside__menuItem"><a href="#" class="aside__menuLink">Наши сервисные центры</a></li>
+            <li class="aside__menuItem"><a href="#" class="aside__menuLink">Контакты</a></li>
+        </ul>
+    </nav>
+</main>
+<footer class="aside__footer">
+    <div class="asaid__socialButtons">
+    <button class="social__button-phone button"></button>
+    <button class="social__button-message button"></button>
+    <button class="social__button-contact button"></button> 
+</div>
+    <div class="social__contact"> 
+     <h5 class="contact__mail"><a href="malito:mail@cps.com" class="contact__mail-link">mail@cps.com</a></h5>
+     <h2><a href="tel:8 800 890 8900" class="contact__phone"> 8 800 890 8900</a></h2>
+</div>
+<div class="footer__button-lang">
+      <button class="footer__button-ru">RU</button>
+      <button class="footer__button-en">EN</button>
+      <button class="footer__button-ch">CH</button>
+</div>
+</footer>
+</aside>
+<div class="modal__feedback">
+    <div class="modal__menu">
+    <button class="modal__button-close"></button>
+    <p class="modal__header-text">Обратная связь</p>
+    <div class="modal__input">
+    <input placeholder="Имя" class="modal__name">
+    <input placeholder="Телефон" class="modal__phone">
+    <input placeholder="Электронная почта" class="modal__mail">
+    <textarea placeholder="Сообщение" class="modal__message"></textarea>
+    </div>
+    <p class="modal__footer-text">Нажимая “отправить”, вы даете согласие на <font color="#FF3E79">обработку персональных данных</font> и соглашаетесь с нашей <font color="#FF3E79">политикой конфиденциальности</font></p>
+    <button class="modal__button-send"></button>
+</div>
+</div>
+<div class="sidebar">
+    <div class="sidebar__menu">
+    <button class="sidebar__button-close"></button>
+    <p class="sidebar__header-text">Заказать звонок</p>
+    <input type="number" placeholder="Телефон" class="sidebar__phone" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    <p class="sidebar__footer-text">Нажимая “отправить”, вы даете согласие на <font color="#FF3E79">обработку персональных данных</font> и соглашаетесь с нашей <font color="#FF3E79">политикой конфиденциальности</font></p>
+<button class="sidebar__button-send"></button>
+</div>
+</div>
+    <div class="container__wrapper">
+        <header class="header">
+            <div class="header__content">
+                <button class="header__button-burger button"></button>
+                <div class="header__logo-separator"></div>
+    <a href="#"><img class="header__img-group" src="./img/Group.png" alt="SPS"></a>
+   <div class="header__button-left">
+           <button class="header__button-phone button"></button>
+           <button class="header__button-message button"></button>
+           <button class="header__button-contact button"></button>
+   </div>
+            <div class="header__seporator"></div>
+            <button class="header__button-service button"></button>
+            <button class="header__button-search button"></button>
+   <h1 class="menu__title-desctop">Услуги и сервисы</h1>
+  <button class="header__button-serviceDesctop button"></button>
+   <button class="header__button-searchDesctop button"></button>
+   </div></header> 
+<main class="main">
+    <nav class="menu__content">
+ <h2 class="menu__title">Услуги и сервисы</h2>
+<ul class="menu__list">
+    <li class="menu__item"><a href="#" class="menu__link">Ремонтированые устройства</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Дополнительные услуги</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Цены на услуги</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Адреса сервисных центров</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Специальные цены</a></li>
+    <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+</ul></nav>
+<div class="main__description">
+      <div class="main__text">
+      <p class="main__text text__main-text">Мы являемся авторизированным<br>сервисным центром по ремонту техники<br>Dell.Только у нас вы сможете<br>отремонтировать свой ноутбук Dell с<br>официальной гарантией производителя.</p>
+      <p class="main__text text__main-textTablet">Мы являемся авторизированным сервисным<br>центром по ремонту техники Dell.Только у нас<br>вы сможете отремонтировать свой ноутбук<br>Dell с официальной гарантией<br>производителя.<br><br>Мы успешно работаем с 1992 года и<br>заслужили репутацию надежного партнера</p><p></p>
+      <p class="main__text text__main-textDesctop">Мы являемся авторизированным сервисным центром по ремонту техники<br>Dell.Только у нас вы сможете отремонтировать свой ноутбук Dell с<br>официальной гарантией производителя.<br><br>Мы успешно работаем с 1992 года и заслужили репутацию надежного<br>партнера,что подтверждает большое количество постоянных клиентов.<br>Мы гордимся тем,что к нам обращаются по рокомендациям и, в свою<br>очередь советуют нас родным и близким.</p>
+      <div class="section__main-add-more">
+      <button class="button__add-more">Читать далее</button></div></div>
+     <img class="text__img img" src="img\_MG_3223.png" alt="big SPS">
+    </div></main>
+</div>
+<section class="swiper__section">
+    <div class="swiper__header">
+        <p>Ремонт техники различных брендов</p>
+    </div>
+    <div class="container swiper-container" data-mobile="false">
+        <ul class="main__swiper swiper-wrapper">
+            <li class="main__brend swiper-slide"><img src="img/Lenovo.svg" alt="lenovo"><button class="link-brand swiper-slide">
+            </button></li>
+            <li class="main__brend swiper-slide"><img src="img/Samsung.svg" alt="Samsung"><button class="link-brand swiper-slide">
+            </button></li>
+            <li class="main__brend swiper-slide"><img src="img/Apple.svg" alt="Apple"><button class="link-brand swiper-slide">
+            </button></li>
+            <li class="main__brend swiper-slide"><img src="img/Bosch.svg" alt="Bosch"><button class="link-brand swiper-slide">
+            </button></li>
+            <li class="main__brend swiper-slide"><img src="img/HP.svg" alt="hp"><button class="link-brand swiper-slide">
+            </button></li>
+            <li class="main__brend swiper-slide"><img src="img/acer.svg" alt="acer"><button class="link-brand swiper-slide">
+            </button></li>
+            <li class="main__brend swiper-slide"><img src="img/ViewSonic.svg" alt="ViewSonic"><button class="link-brand swiper-slide">
+            </button></li>
+            <li class="main__brend swiper-slide"><img src="img/sony.svg" alt="sony"><button class="link-brand swiper-slide">
+            </button></li>
+            <li class="main__brend swiper-slide"><img src="img/Lenovo.svg" alt="lenovo"><button class="link-brand swiper-slide">
+            </button></li>
+            <li class="main__brend swiper-slide"><img src="img/Samsung.svg" alt="Samsung"><button class="link-brand swiper-slide">
+            </button></li>
+            <li class="main__brend swiper-slide"><img src="img/Apple.svg" alt="Apple"><button class="link-brand swiper-slide">
+            </button></li>
+        </ul>
+        <button class="container__button-showMore">Показать все</button>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./js/bundle.js"></script></body>
+</html>
