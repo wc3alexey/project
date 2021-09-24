@@ -156,7 +156,7 @@
 }
 @media (min-width: 1120px) {
     .swiper__section {
-        position: fixed;
+        position: absolute;
         top: 493px;
         left: 359px;
         max-width: 1120px;

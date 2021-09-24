@@ -141,3 +141,14 @@
         display: none;
     }
 }
+@media (min-width: 1120px) {
+
+.content-block{
+   width: 1120px;
+    position: absolute;
+    top: 810px;
+    left: 359px;
+ 
+}
+
+}

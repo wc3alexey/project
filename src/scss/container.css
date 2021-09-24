@@ -6,6 +6,6 @@
 @media (min-width:1120px){
 .container__wrapper{
   left: 360px;
-  position: fixed;
+  position: absolute;
 }
 }
