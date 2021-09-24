@@ -1,7 +1,9 @@
 
 import '../scss/style.scss';
-let mainSwiper = document.querySelector(".main__swiper");
-let buttonSwiper = document.querySelector('.container__button-showMore');
+const mainSwiper = document.querySelector(".main__swiper");
+const mainSwiper1 = document.querySelector(".device-type__wrapper");
+const buttonSwiper = document.querySelector('.container__button-showMore');
+const buttonSwiper1 =document.querySelector('.wrapper__open');
 const sidebar = document.querySelector('.sidebar');
 const openSidebar = document.querySelector('.header__button-phone');
 const closeSidebar =document.querySelector('.sidebar__button-close');
@@ -49,33 +51,37 @@ buttonSwiper.addEventListener('click', function () {
     buttonSwiper.classList.toggle("container__button-showMore_active");
     if (buttonSwiper.textContent = buttonSwiper.classList.contains("container__button-showMore_active") ? "Скрыть" : "Показать всё");
 });
-
-let slider = document.querySelector(".swiper-container")
-let swiper;
-function mobileSlider() {
-    if (window.innerWidth <= 767 && slider.dataset.mobile == "false") {
-        swiper = new Swiper(slider, {
-            direction: 'horizontal',
-            loop: true,
-            slidesPerView: 'auto',
-            spaceBetween: 16,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-        });
-        slider.dataset.mobile = "true";
-    }
-    if (window.innerWidth > 767) {
-        slider.dataset.mobile = "false";
-
-        if (slider.classList.contains("swiper-container-initialized")) {
-            swiper.destroy();
-        }
-    }
-}
-mobileSlider();
-window.addEventListener('resize', () => {
-    mobileSlider();
+buttonSwiper1.addEventListener('click', function () { 
+    mainSwiper1.classList.toggle("device-type__wrapper_active");
+    buttonSwiper1.classList.toggle("wrapper__open_active");
+    if (buttonSwiper1.textContent = buttonSwiper1.classList.contains("wrapper__open_active") ? "Скрыть" : "Показать всё");
 });
 
+
+
+const slider1 = new Swiper(".swiper-container", {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 16,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+})
+
+const slider2 = new Swiper(".content-inner__wrapper", {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 32,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+})
+
+if (window.innerWidth >= 768) {
+    slider1.destroy();
+    slider2.destroy();
+}

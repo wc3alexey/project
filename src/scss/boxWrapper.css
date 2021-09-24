@@ -1,0 +1,141 @@
+.swiper-pagination{
+    bottom: 0;
+}
+.device-type__wrapper{
+     width: auto;
+    margin: 16px 0px 16px 0px;
+}
+
+.content-block{
+    position: relative;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    background: #F2F2F2;
+    height: 307px;
+}
+.content-title{
+    background: linear-gradient(90deg,  #F8F8F8 0%, #FFFFFF 100%);
+    border-top: 3px solid #D9FFF5;
+    padding: 16px 16px 16px 32px ;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #7E7E82;
+    line-height: 24px;
+    font-family: "TT Lakes";
+}
+
+.content-inner__wrapper{
+    width: 100%;
+    padding-left: 28px;
+    width: 240px;
+    height: 160px;
+}
+
+
+
+.wrapper__device{
+    display: flex;
+    width: 240px;
+    list-style: none;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    position: relative;
+    height: 160px;
+    padding-left: 16px;
+  
+}
+.device__link{
+    margin-top: 85px;
+    height: 40px;
+    width: 40px;
+    right: 16px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:#FFFFFF url("../img/dropdown.svg") no-repeat center ;
+    border:2px solid #FF3E79; 
+    cursor: pointer;
+    transition: width 0.5s,height 0.5s, background-color 0.5s, transform 0.5s;
+}
+.device__link:hover{
+    width: 40px;
+    height: 40px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #DDDDDD;
+}
+.swiper-pagination-bullet-active {
+    background: #B5B6BC;
+}
+.container::after {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 81px;
+    right: 1px;
+    top: 10px;
+    z-index: 1;
+    filter: blur(8px);
+}
+.wrapper__open {
+    position: relative;
+    font-family: "TLakes-Medium";
+    font-size: 16px;
+    background: #F8F8F8;
+    border: none;
+    font-weight: 500;
+    display: none;
+    transition: 0.2s; 
+}
+
+.wrapper__open:hover {
+    transform: scale(1.2);
+}
+.wrapper__open::before {
+    position: absolute;
+    content: url("../img/icons.svg");
+    margin-left: -17px;
+    cursor: pointer;
+}
+@media (min-width: 768px) {
+    .wrapper__open {
+        display: block;
+    }
+    .device-type__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        height: 159px;
+        overflow: hidden;
+        margin: 24px 0px 24px 0px;
+    }
+    .wrapper__device {
+        width: 222px;
+        margin-bottom: 16px;
+        margin-right: 24px;
+    }
+    .wrapper__device:nth-child(3n+3) {
+        margin-right: 0px;
+    }
+    .content-title__text::after{
+        display: none;
+    }
+    .wrapper__open:hover {
+        cursor: pointer;
+    }
+    .device-type__wrapper_active {
+        height: auto;
+    }
+    .wrapper__open_active::before {
+        transform: rotate(180deg);
+    }
+    .swiper-pagination{
+        display: none;
+    }
+}

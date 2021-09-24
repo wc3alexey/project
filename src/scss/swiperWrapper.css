@@ -1,12 +1,4 @@
-body {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background: #F8F8F8;
-    overflow-y: scroll;
-  scroll-behavior: smooth;
-}
+
 .swiper__section {
     position: relative;
     min-width: 320px;
