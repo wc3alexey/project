@@ -288,7 +288,7 @@ display: none;
                     color: #7E7E82;  
                 }
         }
-        @media  (min-width:1120px){
+        @media  (min-width:1440px){
             .header__button-main,.header__button-phone, .header__button-message, .header__button-contact,
                 .header__button-search, .header__button-service{
                     display: none;}
@@ -307,7 +307,7 @@ display: none;
                     }
                     .aside__button-search {
                         display: inline-block;
-                        margin-left: 250px;
+                        margin-left: 224px;
                     }
                         .header__button-searchDesctop{
                             background: #FF3E79 url('../img/icon.png');

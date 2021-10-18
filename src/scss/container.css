@@ -5,6 +5,13 @@
 .container__wrapper{
   overflow: hidden;
 }
-@media (min-width:1120px){
-
+@media (min-width:1440px){
+ .container__wrapper{
+   width: 1120px;
+   position: relative;
+   left: 320px;
+ }
+.body{
+  overflow-x:hidden;
+}
 }
