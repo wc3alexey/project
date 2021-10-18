@@ -743,7 +743,7 @@ display: none;
     height: 100vh;
     z-index: 10;
     position: fixed;
-    visibility: hidden;
+   overflow-y: scroll;
     top: 0;
     transition: all 0.5s;
      opacity: .95;
@@ -839,7 +839,7 @@ display: none;
             margin-top: 47px;
         }
         .aside__header-img{
-            top:47px;
+            margin-top: 47px;
         }
         }
        
@@ -854,10 +854,11 @@ display: none;
  .container__wrapper{
    width: 1120px;
    position: relative;
-   left: 320px;
+   left: 311px;
  }
 .body{
   overflow-x:hidden;
+  background-color: #F2F2F2;
 }
 }
 .modal__feedback{
@@ -1192,7 +1193,9 @@ input::placeholder{
 @media (min-width: 1383px){
     .main__brend:nth-child(4n+4) {
         margin-right: 32px;
-
+    }
+        .main__brend {
+            min-width: 317px;
 }
 }
 @media (min-width: 1558px) {
@@ -1348,7 +1351,7 @@ input::placeholder{
 @media (min-width: 1120px) {
 
 .content-block{
-   width: 1120px;
+   width: 100vh;
  
  
 }
