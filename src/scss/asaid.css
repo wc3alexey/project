@@ -10,7 +10,7 @@
     height: 100vh;
     z-index: 10;
     position: fixed;
-    visibility: hidden;
+   overflow-y: scroll;
     top: 0;
     transition: all 0.5s;
      opacity: .95;
@@ -106,7 +106,7 @@
             margin-top: 47px;
         }
         .aside__header-img{
-            top:47px;
+            margin-top: 47px;
         }
         }
        

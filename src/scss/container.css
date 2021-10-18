@@ -9,9 +9,10 @@
  .container__wrapper{
    width: 1120px;
    position: relative;
-   left: 320px;
+   left: 311px;
  }
 .body{
   overflow-x:hidden;
+  background-color: #F2F2F2;
 }
 }

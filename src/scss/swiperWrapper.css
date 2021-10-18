@@ -193,7 +193,9 @@
 @media (min-width: 1383px){
     .main__brend:nth-child(4n+4) {
         margin-right: 32px;
-
+    }
+        .main__brend {
+            min-width: 317px;
 }
 }
 @media (min-width: 1558px) {
