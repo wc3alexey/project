@@ -22,6 +22,12 @@
    .menu__title-desctop{
     display: none ;
 }
+.menu__title-request{
+    display: none;
+}
+.menu__title-status{
+    display: none;
+}
     .menu__list{
         font-family:'TTLakesCondensed-Medium.ttf';
         Font-size: 16px;
@@ -132,7 +138,25 @@
             .menu__title-desctop{
                 display: inline;
                 font-family:'TTLakes-Bold.ttf';
-                
+            }
+            .menu__title-request{
+                position: absolute;
+               display: inline;
+                left: 720px;
+                top: 37px;;
+                color: #1B1C21;
+                font-family:'TTLakesCondensed-Medium.ttf';
+                Font-size: 16px;
+            }
+            .menu__title-status{
+                position: absolute;
+                display: inline;
+                height: 24px;
+                left: 925px;
+                top: 37px;
+                color: #1B1C21;
+                font-family:'TTLakesCondensed-Medium.ttf';
+                Font-size: 16px;
             }
             .menu__title-desctop:before{
                 content: "|";

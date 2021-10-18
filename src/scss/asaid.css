@@ -1,20 +1,22 @@
+
+
 .aside{
     display: flex;
-    max-height: 676px;
+   
     background: #FFFFFF;
     display: flex;
     flex-direction: column;
     width: 320px;
-    width: 100vw;
+    height: 100vh;
     z-index: 10;
     position: fixed;
-    left: -380px;
+    visibility: hidden;
     top: 0;
     transition: all 0.5s;
      opacity: .95;
 }
 .aside.open-menu{
-    left: 0;
+    visibility: visible;
 }
 .aside__header{
     margin:23px 24px 32px 24px; 
@@ -81,18 +83,31 @@
         .aside{
             width: 320px;
             box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02), 16px 0 52px rgba(14, 24, 80, 0.2);
-            max-height: 1024px;
+           
         }}
         @media (min-width:1120px){
+       
+        }
+        @media (min-width:1440px){
+            .body{
+                display: flex;
+            }
             .aside{
-                width: 360px;
                 left: 0;
-                position: absolute;
-                z-index: -1;
-            }
-            .aside__header{
-                margin-top:35px;
-                margin-bottom: 40px;
-            }
+                height: 100vh;
+             width: 320px;
+            position: absolute;
+             overflow-y: auto;
+               top: 0;
+              left: 0;
+                  z-index: 10;
+              display: flex;
+                flex-direction: column;
+                  box-shadow: 10px 0px 30px 11px rgb(14 24 80 / 20%);
+            display: block;
+                background: #FFFFFF;
+             padding: 18px 24px;
+             display: block;
+        }
         }
        

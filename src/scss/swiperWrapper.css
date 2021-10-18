@@ -24,7 +24,8 @@
 }
 .swiper-container {
     width: 100%;
-    padding-bottom: 28px;
+    padding-bottom: 28px; 
+    z-index: 1;
 }
 .swiper-pagination-bullet {
     width: 12px;
@@ -156,10 +157,6 @@
 }
 @media (min-width: 1120px) {
     .swiper__section {
-        position: absolute;
-        top: 493px;
-        left: 359px;
-        max-width: 1120px;
         display: flex;
         flex-direction: column;
     }
@@ -200,7 +197,7 @@
 }
 @media (min-width: 1558px) {
     .swiper__section {
-        top: 459px;
+        top: 460px;
       
     }
 }

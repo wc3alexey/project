@@ -321,25 +321,7 @@ display: none;
                             background-repeat:no-repeat ;
                             background-position: center;
                         }
-                    .header__button-serviceDesctop::before{
-                        position: absolute;
-                        content:"Оставить заявку";
-                        left: 720px;
-                        top: 37px;;
-                        color: #1B1C21;
-                        font-family:'TTLakesCondensed-Medium.ttf';
-                        Font-size: 16px;
-                    }
-                    .header__button-searchDesctop::before{
-                        position: absolute;
-                        content:"Статус ремонта";
-                        height: 24px;
-                        left: 925px;
-                        top: 37px;
-                        color: #1B1C21;
-                        font-family:'TTLakesCondensed-Medium.ttf';
-                        Font-size: 16px;
-                    }
+                  
                     .button__add-more::before{
                         margin:0; 
                         margin-right: 16px;
