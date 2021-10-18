@@ -1,7 +1,9 @@
 .container__wrapper-fade{
     opacity: 0.1;
     pointer-events: none;
-
+}
+.container__wrapper{
+  overflow: hidden;
 }
 @media (min-width:1120px){
 

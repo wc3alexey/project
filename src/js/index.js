@@ -82,7 +82,7 @@ const slider2 = new Swiper(".content-inner__wrapper", {
 })
 
 
-if (window.innerWidth >= 322) {
+if (window.innerWidth >= 768) {
     slider1.destroy();
     slider2.destroy();
     
