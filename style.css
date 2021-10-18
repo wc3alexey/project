@@ -841,7 +841,9 @@ display: none;
 .container__wrapper-fade{
     opacity: 0.1;
     pointer-events: none;
-
+}
+.container__wrapper{
+  overflow: hidden;
 }
 @media (min-width:1120px){
 
@@ -1011,6 +1013,7 @@ input::placeholder{
     width: 100%;
     padding-bottom: 28px; 
     z-index: 1;
+    overflow: hidden;
 }
 .swiper-pagination-bullet {
     width: 12px;
@@ -1220,6 +1223,7 @@ input::placeholder{
     padding-left: 28px;
     width: 240px;
     height: 160px;
+    overflow: hidden;
 }
 
 .wrapper__device{
