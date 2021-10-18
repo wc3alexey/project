@@ -81,7 +81,7 @@
                 margin-right: 24px;
             }
         }
-        @media  (min-width:1120px){
+        @media  (min-width:1440px){
             .header__content{
                 border-bottom: none;
                 width: 100%;
@@ -103,7 +103,12 @@
                     display: none;
                 }
             }
-
+        
+            @media  (min-width:1440px){
+                .header__content{
+                    padding-top: 42px;
+                }
+            }
         @media  (min-width:1800px){
             .header__content{
                 margin: auto;
@@ -399,7 +404,7 @@ display: none;
                     color: #7E7E82;  
                 }
         }
-        @media  (min-width:1120px){
+        @media  (min-width:1440px){
             .header__button-main,.header__button-phone, .header__button-message, .header__button-contact,
                 .header__button-search, .header__button-service{
                     display: none;}
@@ -418,7 +423,7 @@ display: none;
                     }
                     .aside__button-search {
                         display: inline-block;
-                        margin-left: 250px;
+                        margin-left: 224px;
                     }
                         .header__button-searchDesctop{
                             background: #FF3E79 url(./static/icon.png);
@@ -501,7 +506,7 @@ display: none;
             margin: 0 25px 40px 80px;
              }
          }
-         @media  (min-width:1120px){
+         @media  (min-width:1440px){
           
             .main__description{
                     background: #F8F8F8;
@@ -531,7 +536,8 @@ display: none;
              margin:20px 30px 13px 88px;
 
                 }
-                       }
+          
+            }
             @media  (min-width:1800px){
                 .main__description{
                     margin: auto;
@@ -668,7 +674,7 @@ display: none;
             margin-right: 32px;
         }
     }
-    @media  (min-width:1120px){
+    @media  (min-width:1440px){
         .menu__content{
             width: 100%;}
             .menu__title{
@@ -682,7 +688,7 @@ display: none;
                 position: absolute;
                display: inline;
                 left: 720px;
-                top: 37px;;
+                top: 53px;;
                 color: #1B1C21;
                 font-family:'TTLakesCondensed-Medium.ttf';
                 Font-size: 16px;
@@ -692,7 +698,7 @@ display: none;
                 display: inline;
                 height: 24px;
                 left: 925px;
-                top: 37px;
+                top: 53px;
                 color: #1B1C21;
                 font-family:'TTLakesCondensed-Medium.ttf';
                 Font-size: 16px;
@@ -761,7 +767,7 @@ display: none;
 .aside__footer{
     justify-content: space-between;
     display: block;
-    margin-bottom: 32px;
+    margin-top: 217px;
     margin-left: 24px;
 }
 .aside__header-img{
@@ -820,21 +826,20 @@ display: none;
                 display: flex;
             }
             .aside{
-                left: 0;
-                height: 100vh;
-             width: 320px;
+            box-shadow: none;
+            max-width: 310px;
             position: absolute;
-             overflow-y: auto;
-               top: 0;
-              left: 0;
-                  z-index: 10;
-              display: flex;
-                flex-direction: column;
-                  box-shadow: 10px 0px 30px 11px rgb(14 24 80 / 20%);
+            overflow :hidden;
+            z-index: 10;
+            display: flex;
             display: block;
-                background: #FFFFFF;
-             padding: 18px 24px;
-             display: block;
+            visibility: visible;
+        }
+        .aside__header{
+            margin-top: 47px;
+        }
+        .aside__header-img{
+            top:47px;
         }
         }
        
@@ -845,8 +850,15 @@ display: none;
 .container__wrapper{
   overflow: hidden;
 }
-@media (min-width:1120px){
-
+@media (min-width:1440px){
+ .container__wrapper{
+   width: 1120px;
+   position: relative;
+   left: 320px;
+ }
+.body{
+  overflow-x:hidden;
+}
 }
 .modal__feedback{
     position: fixed; 
