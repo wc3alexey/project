@@ -201,6 +201,7 @@
 @media (min-width: 1558px) {
     .swiper__section {
         top: 460px;
+        position: static;
       
     }
 }
