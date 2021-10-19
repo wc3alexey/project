@@ -5,6 +5,7 @@
 .container__wrapper{
   overflow: hidden;
 }
+
 @media (min-width:1440px){
  .container__wrapper{
    width: 1120px;
