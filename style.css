@@ -840,7 +840,7 @@ display: none;
             margin-top: 47px;
         }
         .aside__header-img{
-            margin-top: 47px;
+            margin-top: 15px;
         }
         }
        
@@ -851,6 +851,7 @@ display: none;
 .container__wrapper{
   overflow: hidden;
 }
+
 @media (min-width:1440px){
  .container__wrapper{
    width: 1120px;
@@ -1219,7 +1220,7 @@ input::placeholder{
     min-width: 320px;
     display: flex;
     flex-direction: column;
-    background: #F2F2F2;
+    background: #F8F8F8;
     height: 307px;
 }
 .content-title{
@@ -1234,12 +1235,10 @@ input::placeholder{
 }
 
 .content-inner__wrapper{
-    display: inline-block;
-    width: 100%;
-    padding-left: 28px;
-    width: 240px;
-    height: 160px;
+    
 
+    padding-left: 28px;
+    
 }
 
 .wrapper__device{
@@ -1315,17 +1314,24 @@ input::placeholder{
     cursor: pointer;
 }
 @media (min-width: 768px) {
+    .content-block{
+    
+    height: 100%;
+    }
     .wrapper__open {
         display: block;
     }
     .content-inner__wrapper{
         position: relative;
-        max-height: 400px;
+        
     }
     .device-type__wrapper{
-       display: inline-block;
-        height: 159px;
-       overflow: hidden;
+        
+        display: flex;
+    flex-wrap: wrap;
+    height: 159px;
+    overflow: hidden;
+      
         margin: 24px 0px 24px 0px;
     }
     .wrapper__device {
@@ -1339,8 +1345,6 @@ input::placeholder{
     }
     .device-type__wrapper_active {
         height: auto;
-        display: -webkit-inline-flex;
-        
     }
     .wrapper__open_active::before {
         transform: rotate(180deg);
@@ -1351,13 +1355,16 @@ input::placeholder{
 }
 @media (min-width: 1120px) {
 
-.content-block{
-   width: 100vh;
- 
- 
+}
+@media (min-width: 1440px) {
+    .wrapper__device{
+        padding-left: 16px;
+    }
+    .wrapper__device{
+        width: 322px;
+    }
 }
 
-}
 @font-face {
   font-family: 'TTLakes-Bold.ttf';
   src: url(./fonts/TTLakes-Bold.ttf);
@@ -1379,7 +1386,7 @@ input::placeholder{
 
 .container {
   margin: auto;
-  background: #F2F2F2; }
+  background: #F8F8F8; }
 
 * {
   box-sizing: content-box;
