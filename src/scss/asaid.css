@@ -102,6 +102,7 @@
             display: flex;
             display: block;
             visibility: visible;
+            height: auto;
         }
         .aside__header{
             margin-top: 47px;
