@@ -74,7 +74,7 @@ const slider2 = new Swiper(".content-inner__wrapper", {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 'auto',
-    spaceBetween: 32,
+    spaceBetween: 16,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
