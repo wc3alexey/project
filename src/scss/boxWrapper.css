@@ -73,16 +73,6 @@
 .swiper-pagination-bullet-active {
     background: #B5B6BC;
 }
-.content-inner__wrapper::after {
-    position: absolute;
-    content: "";
-    width: 24px;
-    height: 81px;
-    right: 1px;
-    top: 10px;
-    z-index: 1;
-    filter: blur(8px);
-}
 .wrapper__open {
     position: relative;
     font-family: "TLakes-Medium";
@@ -106,10 +96,7 @@
     cursor: pointer;
 }
 @media (min-width: 768px) {
-    .content-block{
-    
-    height: 100%;
-    }
+
     .wrapper__open {
         display: block;
     }

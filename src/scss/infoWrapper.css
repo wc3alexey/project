@@ -1,0 +1,103 @@
+
+
+    .content__infoSlider{
+display: none;
+    }
+
+@media (min-width: 767px){
+.swiper__infoWrapper{
+    background-color: #F8F8F8;
+}
+.content__infoSlider{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.info-type__slider:first-of-type {
+    background-color: #F8F8F8;
+    margin-bottom: 16px;
+    width: 590px;
+}
+
+.content__info{
+    background: linear-gradient(90deg,  #F8F8F8 0%, #FFFFFF 100%);
+    border-top: 3px solid #D9FFF5;
+    padding: 16px 16px 16px 32px ;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #7E7E82;
+    line-height: 24px;
+    font-family: "TT Lakes";
+}
+.info__link{
+    background-color:#FF3E79; 
+    background-image: url('../img/zakaz.svg');
+    border:none;
+    border-radius: 16px;
+    Font-size: 12px;
+    font-family: 'TTLakes-Bold.ttf';
+    Width:118px;
+    Height:32px;
+    background-repeat:no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.infoInner__slider{
+    display: inline;
+    width: 100%;
+    padding-left: 28px;
+    padding-bottom: 28px;
+    padding-top: 16px;
+    background-color: #F8F8F8;
+}
+.info-type__slider{
+    background-color: #FFFFFF;
+    width: 723px;
+    border-radius: 6px;
+    position: relative;
+  
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    
+
+}
+
+.info-type__slider:first-of-type{
+    background-color: #F8F8F8;
+    margin-bottom: 16px; 
+}
+.wrapper__info{
+    
+    Size: 14px;
+    Line-height: 18px;
+    position: relative;
+    padding-right: 16px;
+    width: 167px;
+    padding-left: 20px;
+    padding-top: 16px;
+}
+td.wrapper__info:nth-child(4n){
+    width: 126px;
+}
+
+td.wrapper__info:first-child{
+    width:768px;
+}
+
+td.wrapper__info:nth-child(3){
+    width:208px;
+}
+}
+@media (min-width: 1012px) {
+    .info-type__slider {
+        width: 961px;
+}
+.info-type__slider:first-of-type {
+   
+    width: 810px;
+}
+}
