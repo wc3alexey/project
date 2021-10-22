@@ -1,0 +1,46 @@
+.price__infoSlider{
+    display: inline-block;
+    position: relative;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    background: #F8F8F8;
+    height: 370px;
+}
+.price__wrapper{
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    position: relative;
+
+width: 260px;
+height: 200px;
+padding: 16px;
+}
+.price__link{
+    background-color:#FF3E79; 
+    background-image: url('../img/zakaz.svg');
+    border:none;
+    border-radius: 16px;
+    Font-size: 12px;
+    font-family: 'TTLakes-Bold.ttf';
+    Width:118px;
+    Height:32px;
+    background-repeat:no-repeat;
+    background-position: center;
+    cursor: pointer;
+    margin-left: 142px;
+}
+.price-type__wrapper{
+    width: auto;
+    margin: 16px 0px 16px 0px;
+}
+.price__wrapperTitle{
+    left: 0;
+    display: inline;
+}
+@media (min-width: 768px) {
+    .price__infoSlider{
+        display: none;
+    }
+}

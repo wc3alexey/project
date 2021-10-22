@@ -2,6 +2,7 @@
 import '../scss/style.scss';
 const mainSwiper = document.querySelector(".main__swiper");
 const mainSwiper1 = document.querySelector(".device-type__wrapper");
+const mainSwiper2 = document.querySelector(".price-type__wrapper");
 const buttonSwiper = document.querySelector('.container__button-showMore');
 const buttonSwiper1 =document.querySelector('.wrapper__open');
 const sidebar = document.querySelector('.sidebar');
@@ -59,7 +60,7 @@ buttonSwiper1.addEventListener('click', function () {
 
 
 
-const slider1 = new Swiper(".swiper-container", {
+const slider = new Swiper(".swiper-container", {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 'auto',
@@ -69,8 +70,17 @@ const slider1 = new Swiper(".swiper-container", {
         clickable: true,
     },
 })
-
-const slider2 = new Swiper(".content-inner__wrapper", {
+const slider1 = new Swiper(".content-inner__wrapper", {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 32,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+})
+const slider2 = new Swiper(".content-inner__infoSlider", {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 'auto',
@@ -81,9 +91,10 @@ const slider2 = new Swiper(".content-inner__wrapper", {
     },
 })
 
-
 if (window.innerWidth >= 768) {
+    slider.destroy();
     slider1.destroy();
     slider2.destroy();
+   
     
 }

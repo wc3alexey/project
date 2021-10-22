@@ -27,10 +27,7 @@
 }
 
 .content-inner__wrapper{
-    
-
     padding-left: 28px;
-    
 }
 
 .wrapper__device{
@@ -84,8 +81,6 @@
     transition: 0.2s; 
     padding-left: 22px;
 }
-
-
 .wrapper__open:hover {
     transform: scale(1.2);
 }
@@ -97,6 +92,10 @@
 }
 @media (min-width: 768px) {
 
+    .content-block {
+        height: auto;
+        padding-bottom: 28px;
+    }
     .wrapper__open {
         display: block;
     }
