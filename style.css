@@ -285,6 +285,61 @@ display: none;
     background-image: url(./static/contacts.png);
     margin-right: 16px;
 }
+.footer__button-lang{
+    margin: 22px 0 1000px 0;
+  }
+.footer__button-ru{
+    font-family:'TTLakesCondensed-Medium.ttf';
+    border: 0;
+    background: #FFFFFF;
+    cursor: pointer;
+    transition: 0.5s;  
+    cursor: pointer;
+}
+.footer__button-ru:hover {
+    transform: scale(1.2);
+}
+.footer__button-en{
+    font-family:'TTLakesCondensed-Medium.ttf';
+    border: 0;
+    background: #FFFFFF;
+    cursor: pointer;
+    transition: 0.5s;  
+}
+.footer__button-en:hover {
+    transform: scale(1.2);
+}
+.footer__button-ch{
+    font-family:'TTLakesCondensed-Medium.ttf';
+    border: 0; 
+    background: #FFFFFF;
+    cursor: pointer;
+    transition: 0.5s;  
+}
+.footer__button-ch:hover {
+    transform: scale(1.2);
+}
+.footer__button-ru:active:hover{
+    text-decoration: none;
+    color: #1B1C21;
+}
+.footer__button-en:active:hover{
+    text-decoration: none;
+    color: #1B1C21;
+}
+.footer__button-ch:active:hover{
+    text-decoration: none;
+    color: #1B1C21;
+}
+.footer__button-ru:focus{
+    color: #7E7E82;
+}
+.footer__button-en:focus{
+    color: #7E7E82;  
+}
+.footer__button-ch:focus{
+    color: #7E7E82;  
+}
 @media (min-width:768px) {
     .header__button-phone, .header__button-message, .header__button-contact{
         display:inline-block;      
@@ -348,61 +403,11 @@ display: none;
                 .aside__button-search{
                     margin-left: 177px;
                 }
-                .footer__button-lang{
-                    margin: 22px 0 1000px 0;
-                  }
-                .footer__button-ru{
-                    font-family:'TTLakesCondensed-Medium.ttf';
-                    border: 0;
-                    background: #FFFFFF;
-                    cursor: pointer;
-                    transition: 0.5s;  
-                    cursor: pointer;
-                }
-                .footer__button-ru:hover {
-                    transform: scale(1.2);
-                }
-                .footer__button-en{
-                    font-family:'TTLakesCondensed-Medium.ttf';
-                    border: 0;
-                    background: #FFFFFF;
-                    cursor: pointer;
-                    transition: 0.5s;  
-                }
-                .footer__button-en:hover {
-                    transform: scale(1.2);
-                }
-                .footer__button-ch{
-                    font-family:'TTLakesCondensed-Medium.ttf';
-                    border: 0; 
-                    background: #FFFFFF;
-                    cursor: pointer;
-                    transition: 0.5s;  
-                }
-                .footer__button-ch:hover {
-                    transform: scale(1.2);
-                }
-                .footer__button-ru:active:hover{
-                    text-decoration: none;
-                    color: #1B1C21;
-                }
-                .footer__button-en:active:hover{
-                    text-decoration: none;
-                    color: #1B1C21;
-                }
-                .footer__button-ch:active:hover{
-                    text-decoration: none;
-                    color: #1B1C21;
-                }
-                .footer__button-ru:focus{
-                    color: #7E7E82;
-                }
-                .footer__button-en:focus{
-                    color: #7E7E82;  
-                }
-                .footer__button-ch:focus{
-                    color: #7E7E82;  
-                }
+        }
+        @media  (min-width:1120px){
+            .header__button-left{
+            margin-left: 615px;
+            }
         }
         @media  (min-width:1440px){
             .header__button-main,.header__button-phone, .header__button-message, .header__button-contact,
@@ -506,6 +511,12 @@ display: none;
             margin: 0 25px 40px 80px;
              }
          }
+         @media  (min-width:1120px){
+        .text__img{
+            width: 600px;
+            margin-left: 203px;
+        } 
+        }
          @media  (min-width:1440px){
           
             .main__description{
@@ -1175,7 +1186,7 @@ input::placeholder{
         margin: 24px 33px 34px 0px;
     }
     .main__brend {
-        min-width: 238px;
+        min-width: 227px;
         margin-right: 32px;
     }
     .main__brend:nth-child(3n+3) {
@@ -1242,6 +1253,7 @@ input::placeholder{
 }
 
 .wrapper__device{
+    font-family: 'TLakes-Medium';
     display: inline block;
     width: 240px;
     list-style: none;
@@ -1343,7 +1355,9 @@ input::placeholder{
     }
 }
 @media (min-width: 1120px) {
-
+.wrapper__device{
+    width: 322px;
+}
 }
 @media (min-width: 1440px) {
     .wrapper__device{
@@ -1427,7 +1441,7 @@ display: none;
     margin-bottom: 16px; 
 }
 .wrapper__info{
-    
+    font-family: 'TTLakesCondensed-Regular.ttf';
     Size: 14px;
     Line-height: 18px;
     position: relative;
@@ -1457,6 +1471,33 @@ td.wrapper__info:nth-child(3){
     width: 810px;
 }
 }
+@media (min-width: 1120px){
+    .info-type__slider {
+        width: 1060px;
+    }
+    .info-type__slider:first-of-type {
+        width: 903px;
+    }
+}
+@media (min-width: 1258px){
+    .info-type__slider {
+        width: 1202px;
+    }
+    .info-type__slider:first-of-type {
+        width: 1047px;
+    }
+    }
+@media (min-width: 1440px){
+.info-type__slider {
+    width: 1063px;
+}
+.info-type__slider:first-of-type {
+    width: 914px;
+}
+}
+.content-inner__infoSlider{
+    padding-left: 16px;
+}
 .price__infoSlider{
     display: inline-block;
     position: relative;
@@ -1464,17 +1505,16 @@ td.wrapper__info:nth-child(3){
     display: flex;
     flex-direction: column;
     background: #F8F8F8;
-    height: 370px;
+    height: 344px;
 }
 .price__wrapper{
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
     border-radius: 8px;
     position: relative;
-
-width: 260px;
-height: 200px;
-padding: 16px;
+    width: 226px;
+    height: 175px;
+    padding: 16px;
 }
 .price__link{
     background-color:#FF3E79; 
@@ -1488,7 +1528,6 @@ padding: 16px;
     background-repeat:no-repeat;
     background-position: center;
     cursor: pointer;
-    margin-left: 142px;
 }
 .price-type__wrapper{
     width: auto;
@@ -1497,6 +1536,44 @@ padding: 16px;
 .price__wrapperTitle{
     left: 0;
     display: inline;
+    line-height: 1px;
+    font-family:'TTLakesCondensed-Medium.ttf';
+    padding-bottom: 10px;
+}
+.price__wrapperInfo{
+    line-height: 14px;
+    font-family: 'TTLakesCondensed-Regular.ttf';
+    height: 34px;
+}
+.price__wrapperInfo:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+.price__text {
+    font-family: 'TTLakesCondensed-Regular.ttf';
+    font-size: 14px;
+    padding: 0 16px 0 16px;
+    letter-spacing: 0.2px;
+    background: #F8F8F8;
+}
+.price{
+    width: 100%;
+    background-color: #F8F8F8;
+    padding-bottom: 50px;
+}
+.priseText__link {
+    font-family:'TTLakesCondensed-Medium.ttf';
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 16px 16px 0 16px;
+    color: #1b1c21;
+    background: #F8F8F8;
+}
+.priseText__link::after{
+    content:url(./static/Line.svg);
+    margin-left: 10px;
+    cursor: pointer;
 }
 @media (min-width: 768px) {
     .price__infoSlider{
@@ -1504,6 +1581,28 @@ padding: 16px;
     }
 }
 
+.footer{
+    display: flex;
+    flex-direction: column;
+    font-family: "TTLakes";
+    font-size: 14px;
+    color: #7e7e82;
+    padding-bottom: 20px;
+    border-top: 1px solid #D9FFF5;
+    background-color: #F8F8F8;
+}
+.footer__text{
+    margin: 16px 16px 0 16px;
+    line-height: 16px;
+    text-align: center;
+}
+@media (min-width: 768px){
+.footer {
+    flex-direction: row;
+    padding: 32px 24p 24px 25px;
+    justify-content: space-between;
+}
+}
 @font-face {
   font-family: 'TTLakes-Bold.ttf';
   src: url(./fonts/TTLakes-Bold.ttf);
@@ -1513,9 +1612,7 @@ padding: 16px;
 
 @font-face {
   font-family: 'TTLakesCondensed-Medium.ttf';
-  src: url(./fonts/TTLakes-Medium.ttf);
-  Font-style: Medium;
-  font-size: 16px; }
+  src: url(./fonts/TTLakes-Medium.ttf); }
 
 @font-face {
   font-family: 'TTLakesCondensed-Regular.ttf';
