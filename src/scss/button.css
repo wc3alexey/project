@@ -303,7 +303,10 @@ display: none;
                     .aside__button-search{
                             margin-left:243px;
                         }
-                    
+                        .header__button-left{
+                            display: inline;
+                            margin-left: 265px;
+                        }
                     .header__button-burger{
                         display: none;
                     }
