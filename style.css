@@ -1584,8 +1584,15 @@ td.wrapper__info:nth-child(3){
     .price__infoSlider{
         display: none;
     }
+    .price__text{
+        padding-right: 323px;
+    }
 }
-
+@media (min-width: 1440px) {
+.price__text{
+    padding-right: 668px;
+}
+}
 .footer{
     display: flex;
     flex-direction: column;
