@@ -63,6 +63,7 @@
     width: 100%;
     background-color: #F8F8F8;
     padding-bottom: 50px;
+    padding-left: 16px;
 }
 .priseText__link {
     font-family:'TTLakesCondensed-Medium.ttf';
