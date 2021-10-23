@@ -71,7 +71,7 @@ display: none;
     margin-bottom: 16px; 
 }
 .wrapper__info{
-    
+    font-family: 'TTLakesCondensed-Regular.ttf';
     Size: 14px;
     Line-height: 18px;
     position: relative;
@@ -99,5 +99,29 @@ td.wrapper__info:nth-child(3){
 .info-type__slider:first-of-type {
    
     width: 810px;
+}
+}
+@media (min-width: 1120px){
+    .info-type__slider {
+        width: 1060px;
+    }
+    .info-type__slider:first-of-type {
+        width: 903px;
+    }
+}
+@media (min-width: 1258px){
+    .info-type__slider {
+        width: 1202px;
+    }
+    .info-type__slider:first-of-type {
+        width: 1047px;
+    }
+    }
+@media (min-width: 1440px){
+.info-type__slider {
+    width: 1063px;
+}
+.info-type__slider:first-of-type {
+    width: 914px;
 }
 }

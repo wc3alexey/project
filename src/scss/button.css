@@ -169,6 +169,61 @@ display: none;
     background-image: url('../img/contacts.png');
     margin-right: 16px;
 }
+.footer__button-lang{
+    margin: 22px 0 1000px 0;
+  }
+.footer__button-ru{
+    font-family:'TTLakesCondensed-Medium.ttf';
+    border: 0;
+    background: #FFFFFF;
+    cursor: pointer;
+    transition: 0.5s;  
+    cursor: pointer;
+}
+.footer__button-ru:hover {
+    transform: scale(1.2);
+}
+.footer__button-en{
+    font-family:'TTLakesCondensed-Medium.ttf';
+    border: 0;
+    background: #FFFFFF;
+    cursor: pointer;
+    transition: 0.5s;  
+}
+.footer__button-en:hover {
+    transform: scale(1.2);
+}
+.footer__button-ch{
+    font-family:'TTLakesCondensed-Medium.ttf';
+    border: 0; 
+    background: #FFFFFF;
+    cursor: pointer;
+    transition: 0.5s;  
+}
+.footer__button-ch:hover {
+    transform: scale(1.2);
+}
+.footer__button-ru:active:hover{
+    text-decoration: none;
+    color: #1B1C21;
+}
+.footer__button-en:active:hover{
+    text-decoration: none;
+    color: #1B1C21;
+}
+.footer__button-ch:active:hover{
+    text-decoration: none;
+    color: #1B1C21;
+}
+.footer__button-ru:focus{
+    color: #7E7E82;
+}
+.footer__button-en:focus{
+    color: #7E7E82;  
+}
+.footer__button-ch:focus{
+    color: #7E7E82;  
+}
 @media (min-width:768px) {
     .header__button-phone, .header__button-message, .header__button-contact{
         display:inline-block;      
@@ -232,61 +287,11 @@ display: none;
                 .aside__button-search{
                     margin-left: 177px;
                 }
-                .footer__button-lang{
-                    margin: 22px 0 1000px 0;
-                  }
-                .footer__button-ru{
-                    font-family:'TTLakesCondensed-Medium.ttf';
-                    border: 0;
-                    background: #FFFFFF;
-                    cursor: pointer;
-                    transition: 0.5s;  
-                    cursor: pointer;
-                }
-                .footer__button-ru:hover {
-                    transform: scale(1.2);
-                }
-                .footer__button-en{
-                    font-family:'TTLakesCondensed-Medium.ttf';
-                    border: 0;
-                    background: #FFFFFF;
-                    cursor: pointer;
-                    transition: 0.5s;  
-                }
-                .footer__button-en:hover {
-                    transform: scale(1.2);
-                }
-                .footer__button-ch{
-                    font-family:'TTLakesCondensed-Medium.ttf';
-                    border: 0; 
-                    background: #FFFFFF;
-                    cursor: pointer;
-                    transition: 0.5s;  
-                }
-                .footer__button-ch:hover {
-                    transform: scale(1.2);
-                }
-                .footer__button-ru:active:hover{
-                    text-decoration: none;
-                    color: #1B1C21;
-                }
-                .footer__button-en:active:hover{
-                    text-decoration: none;
-                    color: #1B1C21;
-                }
-                .footer__button-ch:active:hover{
-                    text-decoration: none;
-                    color: #1B1C21;
-                }
-                .footer__button-ru:focus{
-                    color: #7E7E82;
-                }
-                .footer__button-en:focus{
-                    color: #7E7E82;  
-                }
-                .footer__button-ch:focus{
-                    color: #7E7E82;  
-                }
+        }
+        @media  (min-width:1120px){
+            .header__button-left{
+            margin-left: 615px;
+            }
         }
         @media  (min-width:1440px){
             .header__button-main,.header__button-phone, .header__button-message, .header__button-contact,

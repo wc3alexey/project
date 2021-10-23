@@ -31,6 +31,7 @@
 }
 
 .wrapper__device{
+    font-family: 'TLakes-Medium';
     display: inline block;
     width: 240px;
     list-style: none;
@@ -132,7 +133,9 @@
     }
 }
 @media (min-width: 1120px) {
-
+.wrapper__device{
+    width: 322px;
+}
 }
 @media (min-width: 1440px) {
     .wrapper__device{
