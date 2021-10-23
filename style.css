@@ -419,7 +419,10 @@ display: none;
                     .aside__button-search{
                             margin-left:243px;
                         }
-                    
+                        .header__button-left{
+                            display: inline;
+                            margin-left: 265px;
+                        }
                     .header__button-burger{
                         display: none;
                     }
@@ -1263,6 +1266,8 @@ input::placeholder{
     position: relative;
     height: 160px;
     padding-left: 16px;
+    padding-top: 16px;
+    font-size: 16px;
   
 }
 .device__link{
