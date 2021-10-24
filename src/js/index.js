@@ -2,16 +2,21 @@
 import '../scss/style.scss';
 const mainSwiper = document.querySelector(".main__swiper");
 const mainSwiper1 = document.querySelector(".device-type__wrapper");
-const mainSwiper2 = document.querySelector(".price-type__wrapper");
+const mainSwiper2 = document.querySelector(".text__main-textAdd-more");
+const mainSwiper3 = document.querySelector(".text__main-textTablet");
 const buttonSwiper = document.querySelector('.container__button-showMore');
 const buttonSwiper1 =document.querySelector('.wrapper__open');
+const buttonSwiper2 = document.querySelector('.button__add-more')
 const sidebar = document.querySelector('.sidebar');
 const openSidebar = document.querySelector('.header__button-phone');
+const openSidebar1 = document.querySelector('.social__button-phone')
 const closeSidebar =document.querySelector('.sidebar__button-close');
 const modal = document.querySelector('.modal__feedback');
 const openModal = document.querySelector('.header__button-message');
+const openModal1 = document.querySelector('.social__button-message')
 const modalClose = document.querySelector('.modal__button-close');
 const container = document.querySelector('.container__wrapper');
+const ollContainer = document.querySelector('.body')
 const left = document.querySelector('.aside');
 const button = document.querySelector('.header__button-burger');
 const buttonClose = document.querySelector('.aside__button-close');
@@ -31,6 +36,10 @@ openModal.addEventListener('click',function () {
     modal.classList.toggle('close-modal');
     container.classList.toggle('container__wrapper-fade');
 });
+openModal1.addEventListener('click',function () {
+    modal.classList.toggle('close-modal');
+    ollContainer.classList.toggle('body-fade');
+});
 
 modalClose.addEventListener('click',function () {
     modal.classList.toggle('close-modal');
@@ -40,6 +49,11 @@ modalClose.addEventListener('click',function () {
 openSidebar.addEventListener('click',function () {
     sidebar.classList.toggle('close-sidebar');
     container.classList.toggle('container__wrapper-fade');
+});
+
+openSidebar1.addEventListener('click',function () {
+    sidebar.classList.toggle('close-sidebar');
+    ollContainer.classList.toggle('body-fade');
 });
 
 closeSidebar.addEventListener('click',function () {
@@ -56,6 +70,11 @@ buttonSwiper1.addEventListener('click', function () {
     mainSwiper1.classList.toggle("device-type__wrapper_active");
     buttonSwiper1.classList.toggle("wrapper__open_active");
     if (buttonSwiper1.textContent = buttonSwiper1.classList.contains("wrapper__open_active") ? "Скрыть" : "Показать всё");
+});
+buttonSwiper2.addEventListener('click', function () { 
+    mainSwiper2.classList.toggle("text__main-textAdd-more-active");
+    buttonSwiper2.classList.toggle("wrapper__open_active");
+    if (buttonSwiper2.textContent = buttonSwiper2.classList.contains("wrapper__open_active") ? "скрыть" : "Читать далее");
 });
 
 

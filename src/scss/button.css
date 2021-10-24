@@ -274,7 +274,9 @@ display: none;
                 color: #EAEAEA;
                 background-color: #EAEAEA;
             }
-      
+             .button__add-more-active{
+                 height: auto;
+             }
             .button__add-more{
                 margin-top: 10px;
                 cursor: pointer;

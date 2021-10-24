@@ -107,8 +107,7 @@
         
     }
     .device-type__wrapper{
-        
-        display: flex;
+    display: flex;
     flex-wrap: wrap;
     height: 159px;
     overflow: hidden;

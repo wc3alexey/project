@@ -18,6 +18,19 @@
    }
 .text__main-textTablet, .text__main-textDesctop{
     display: none;
+    
+}
+.text__main-textAdd-more{
+    display: none;
+}
+.text__main-textAdd-more-active{
+    height: auto; 
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    width: 244px;
+    overflow: hidden;
 }
 .text__img {
     Width :320px;
@@ -33,7 +46,15 @@
         .main__text{
             margin-left: 24px;
         }
-             .text__main-text, .text__main-textDesctop{
+             .text__main-textDesctop{
+                display: inline;
+                Width: 312px;
+                Height:160px;
+                margin-bottom: 10px;
+                margin-left: 0;
+                display: none;
+             }
+             .text__main-textTablet-close{
                  display: none;
              }
              .text__main-textTablet{
@@ -49,12 +70,15 @@
             display: block;
             border-radius: 2%;
             margin: 0 25px 40px 80px;
+            width: 360px;
+            height: 200px;
              }
          }
          @media  (min-width:1120px){
         .text__img{
             width: 600px;
             margin-left: 203px;
+            height: 300px;
         } 
         }
          @media  (min-width:1440px){
@@ -67,24 +91,12 @@
                 margin-left: 34px;
                 margin-top: 20px;
             }
-            .text__main-text,.text__main-textTablet{
-                display: none;
-            }
-            .text__main-textDesctop{
-                display: inline;
-                font-family: 'TTLakesCondensed-Regular.ttf';
-                font-size: 14px;
-                color: #1B1C21;  
-            }
-                .text__main-textDesctop{
-                    margin-left: 0;
-                    font-family: 'TTLakesCondensed-Regular.ttf';
-                    font-size: 14px;
-                }
+         
+          
             .text__img{
                 width: 532px;
              border-radius: 2%;
-             margin:20px 30px 13px 88px;
+             margin:0 30px 44px 230px;
 
                 }
           

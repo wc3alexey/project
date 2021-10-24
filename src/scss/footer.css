@@ -19,4 +19,11 @@
     padding: 32px 24p 24px 25px;
     justify-content: space-between;
 }
+.footer__text{
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+    flex-basis: 33%;
+}
 }
