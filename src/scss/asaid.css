@@ -96,7 +96,7 @@
             .aside{
             box-shadow: none;
             max-width: 310px;
-            position: absolute;
+            position: static;
             overflow :hidden;
             z-index: 10;
             display: flex;

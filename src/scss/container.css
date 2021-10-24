@@ -9,11 +9,12 @@
 @media (min-width:1440px){
  .container__wrapper{
    width: 1120px;
-   position: relative;
-   left: 311px;
+
  }
 .body{
   overflow-x:hidden;
   background-color: #F2F2F2;
+  display: flex;
+  justify-content: center;
 }
 }
