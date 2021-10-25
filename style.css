@@ -479,7 +479,7 @@ display: none;
    .text__main-text{
        margin-bottom: 16px;
        margin-left:16px;
-       width: 288px;
+       width: auto;
    }
 .text__main-textTablet, .text__main-textDesctop{
     display: none;
@@ -494,7 +494,7 @@ display: none;
     flex-wrap: wrap;
     margin-bottom: 16px;
     margin-left: 16px;
-    width: 244px;
+    width: auto;
     overflow: hidden;
 }
 .text__img {
@@ -534,7 +534,7 @@ display: none;
              width: 360px;
             display: block;
             border-radius: 2%;
-            margin: 0 25px 40px 80px;
+            margin: 0 25px 40px 66px;
             width: 360px;
             height: 200px;
              }
@@ -542,7 +542,7 @@ display: none;
          @media  (min-width:1120px){
         .text__img{
             width: 600px;
-            margin-left: 203px;
+            margin-left:31px;
             height: 300px;
         } 
         }
@@ -561,7 +561,7 @@ display: none;
             .text__img{
                 width: 532px;
              border-radius: 2%;
-             margin:0 30px 44px 230px;
+             margin:0 30px 44px 22px;
 
                 }
           
