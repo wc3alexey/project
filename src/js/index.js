@@ -15,7 +15,7 @@ const modal = document.querySelector('.modal__feedback');
 const openModal = document.querySelector('.header__button-message');
 const openModal1 = document.querySelector('.social__button-message')
 const modalClose = document.querySelector('.modal__button-close');
-const container = document.querySelector('.container__wrapper');
+const container = document.querySelector('.container__menu');
 const ollContainer = document.querySelector('.body')
 const left = document.querySelector('.aside');
 const button = document.querySelector('.header__button-burger');
@@ -23,42 +23,42 @@ const buttonClose = document.querySelector('.aside__button-close');
 
 button.addEventListener('click', function () {
     left.classList.toggle('open-menu');
-    container.classList.toggle('container__wrapper-fade');
+    container.classList.toggle('container__menu-fade');
     
 });
 
 buttonClose.addEventListener('click', function () {
     left.classList.toggle('open-menu');
-    container.classList.toggle('container__wrapper-fade');
+    container.classList.toggle('container__menu-fade');
 });
 
 openModal.addEventListener('click',function () {
     modal.classList.toggle('close-modal');
-    container.classList.toggle('container__wrapper-fade');
+    container.classList.toggle('container__menu-fade');
 });
 openModal1.addEventListener('click',function () {
     modal.classList.toggle('close-modal');
-    ollContainer.classList.toggle('body-fade');
+    container.classList.toggle('container__menu-fade');
 });
 
 modalClose.addEventListener('click',function () {
     modal.classList.toggle('close-modal');
-    container.classList.toggle('container__wrapper-fade');
+    container.classList.toggle('container__menu-fade');
 });
 
 openSidebar.addEventListener('click',function () {
     sidebar.classList.toggle('close-sidebar');
-    container.classList.toggle('container__wrapper-fade');
+    container.classList.toggle('container__menu-fade');
 });
 
 openSidebar1.addEventListener('click',function () {
     sidebar.classList.toggle('close-sidebar');
-    ollContainer.classList.toggle('body-fade');
+    container.classList.toggle('container__menu-fade');
 });
 
 closeSidebar.addEventListener('click',function () {
     sidebar.classList.toggle('close-sidebar');
-    container.classList.toggle('container__wrapper-fade');
+    container.classList.toggle('container__menu-fade');
 });
 
 buttonSwiper.addEventListener('click', function () { 
