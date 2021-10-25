@@ -18,6 +18,7 @@
 }
 .aside.open-menu{
     visibility: visible;
+    overflow-x: hidden;
 }
 .aside__header{
     margin:23px 24px 32px 24px; 

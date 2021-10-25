@@ -39,6 +39,7 @@ openModal.addEventListener('click',function () {
 openModal1.addEventListener('click',function () {
     modal.classList.toggle('close-modal');
     container.classList.toggle('container__menu-fade');
+ 
 });
 
 modalClose.addEventListener('click',function () {
@@ -54,6 +55,7 @@ openSidebar.addEventListener('click',function () {
 openSidebar1.addEventListener('click',function () {
     sidebar.classList.toggle('close-sidebar');
     container.classList.toggle('container__menu-fade');
+    
 });
 
 closeSidebar.addEventListener('click',function () {
